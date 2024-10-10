@@ -1,0 +1,30 @@
+/* Main background container with animation */
+.bg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f0f, #0ff, #f0f);
+    background-size: 400% 400%;
+    animation: bg-animation 15s ease infinite;
+  }
+  
+  /* Form container styles */
+  .form-container {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    z-index: 2;  /* To stay on top of the background */
+  }
+  
+  /* Background animation */
+  @keyframes bg-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
